@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
+	<groupId>com.weisong</groupId>
+	<artifactId>weisong-parent-pom</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>weisong-parent-pom</name>
+	<description>Wei Song's parent pom</description>
+	<packaging>pom</packaging>
+
+	<properties>
+		<nexus.server>weisong-rhel:8081</nexus.server>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>public</id>
+			<name>Public Repository</name>
+			<url>http://${nexus.server}/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://${nexus.server}/nexus/content/groups/central/</url>
+		</repository>
+	</repositories>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://${nexus.server}/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://${nexus.server}/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+</project>
