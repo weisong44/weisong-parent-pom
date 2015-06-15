@@ -1,8 +1,0 @@
-language: java
-jdk:
-  - oraclejdk8
-  - oraclejdk7
-  - openjdk6
-install:
-  - mvn install -P docs -q -U -DskipTests=true 
-
