@@ -216,23 +216,23 @@
 		<repository>
 			<id>public</id>
 			<name>Public Repository</name>
-			<url>http://${nexus.server}/nexus/content/groups/public/</url>
+			<url>http://weisong-rhel:8081/nexus/content/groups/public/</url>
 		</repository>
 		<repository>
 			<id>central</id>
 			<name>Central Repository</name>
-			<url>http://${nexus.server}/nexus/content/groups/central/</url>
+			<url>http://weisong-rhel:8081/nexus/content/groups/central/</url>
 		</repository>
 	</repositories>
 
 	<distributionManagement>
 		<repository>
 			<id>nexus</id>
-			<url>http://${nexus.server}/nexus/content/repositories/releases/</url>
+			<url>http://weisong-rhel:8081/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
-			<url>http://${nexus.server}/nexus/content/repositories/snapshots/</url>
+			<url>http://weisong-rhel:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
